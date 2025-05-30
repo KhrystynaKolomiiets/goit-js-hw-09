@@ -16,3 +16,73 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+.gallery {
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+}
+.gallery-item {
+  flex-basis: calc((100% - 48px) / 3);
+  transition: transform 0.3s;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+.gallery-item:hover,
+.gallery-item:focus {
+  transform: scale(1.05);
+}
+.form-container {
+  border-radius: 8px;
+  padding: 24px;
+  width: 408px;
+  height: 296px;
+  background: white;
+  margin: 0 auto;
+}
+.feedback-form {
+  width: 360px;
+  height: 192px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.input-form {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+}
+.textarea-form {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 80px;
+}
+.btn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 95px;
+  height: 40px;
+  background: #4e75ff;
+  border: none;
+}
